@@ -9,16 +9,17 @@ import { v4 as uuidv4 } from 'uuid';
 export async function POST(req: NextRequest) {
   try {
     // In development mode, bypass authentication for testing
-    let userId = 'test-user';
+    let userId: string = 'test-user';
     
     // Only check authentication in production
     if (process.env.NODE_ENV === 'production') {
       const session = await getServerSession(authOptions);
-      userId = (session?.user as { id?: string })?.id;
+      const sessionUserId = (session?.user as { id?: string })?.id;
 
-      if (!userId) {
+      if (!sessionUserId) {
         return NextResponse.json({ message: 'Unauthorized' }, { status: 401 });
       }
+      userId = sessionUserId;
     }
 
     const { data, dataType } = await req.json();
