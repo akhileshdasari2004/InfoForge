@@ -20,6 +20,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ message: 'Unauthorized' }, { status: 401 });
       }
       userId = sessionUserId;
+      console.log(userId);
     }
 
     const { data, dataType } = await req.json();
