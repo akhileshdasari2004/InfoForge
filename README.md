@@ -1,4 +1,4 @@
-# 🧠 Data Alchemist Pro - AI-Powered Data Cleaner & Rule Builder
+# 🧠 InfoForge - AI-Powered Data Cleaner & Rule Builder
 
 > An intelligent data processing platform that transforms messy CSV/XLSX files into clean, validated datasets with explainable AI. Built with Next.js, Gemini AI, and Redis task queues.
 
@@ -14,7 +14,7 @@
 
 ## 📦 **Project Overview**
 
-Data Alchemist Pro is a full-stack application I developed to solve the common problem of messy, inconsistent data. It empowers users to:
+InfoForge is a full-stack application I developed to solve the common problem of messy, inconsistent data. It empowers users to:
 - Upload client/worker/task datasets
 - Validate data with 12+ rules and Google's Gemini AI
 - Auto-correct issues via AI suggestions
