@@ -76,7 +76,7 @@ export default function SignUpPage() {
           </div>
           <CardTitle className="text-2xl">Create Account</CardTitle>
           <CardDescription>
-            Join Data Alchemist and transform your data
+            Join InfoForge and transform your data
           </CardDescription>
         </CardHeader>
         <CardContent>
