@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Alchemist",
+  title: "InfoForge",
   description:
     "A comprehensive web application for intelligent data processing, validation, and management, TypeScript, and AI",
 };
