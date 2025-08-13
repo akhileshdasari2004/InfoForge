@@ -221,6 +221,7 @@ export class AIService {
       try {
         return JSON.parse(response);
       } catch (directParseError) {
+        console.log(directParseError);
         // If direct parsing fails, try to extract JSON array pattern
         const jsonMatch = response.match(/\[[\s\S]*\]/);
         if (jsonMatch) {
