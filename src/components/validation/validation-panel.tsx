@@ -29,7 +29,7 @@ export function ValidationPanel() {
       setValidationErrors(errors);
       toast.success(`Validation complete. Found ${errors.length} issues.`);
     } catch (error) {
-      toast.error('Validation failed');
+      toast.error('Validation failed'+error.message);
     } finally {
       setIsValidating(false);
     }
@@ -63,6 +63,7 @@ export function ValidationPanel() {
         await runValidation();
       }
     } catch (error) {
+      console.log(error.message);
       await runValidation();
     } finally {
       setIsValidating(false);
